@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- JS -->
+    <script src="js/script.js"></script>
+
+    <title>CRUD HTML5,CSS3 & JAVASCRIPT - Utilizando Janela Modal</title>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <h1>CRUD HTML5,CSS3 & JAVASCRIPT</h1>
+    </header>
+
+
+    <div class="container">
+        <!-- SESSÃO DE INFORMAÇÔES E FORMS -->
+        <aside>
+            <!-- FORM MODAL-->
+            <div id="form" class="modalClosed">
+                <h3 id="modal">NOVO CADASTRO</h3>
+                <div class="inputRow">
+                    <label>nome:</label>
+                    <input type="text" id="nomeInput" placeholder="Digite o nome.">
+                </div>
+                <div class="inputRow">
+                    <label>e-mail:</label>
+                    <input type="email" id="emailInput" placeholder="e-mail.">
+                </div>
+                <div class="inputRow">
+                    <label>telefone:</label>
+                    <input type="number" id="telefoneInput" placeholder="informe o telefone.">
+                </div>
+
+                <div class="modalButton">
+                    <button id="btnAdd" onclick="pessoa.salvar()">salvar</button>
+                    <button id="btnCancela" onclick="pessoa.cancelar()">cancelar</button>
+                </div>
+            </div>
+
+            <!-- INFORMAÇÕES -->
+            <div class="info">
+                <h2>Contatos</h2>
+                <p>Lista de contatos , criado para exercitar meus conhecimentos em html5, css3 & JavaScript.</p>
+            </div>
+
+        </aside>
+
+        <!-- CONTEÚDO PRINCIPAL / AREA BUTTONS & TABLE -->
+        <main>
+            <div class="content">
+                <!-- MENU DE NAVEGAÇÂO / NOVO CADASTRO & PESQUISA-->
+                <nav>
+                    <div class="areaButtons">
+                        <button id="btnCadastro" onclick="modalOpen()">novo cadastro</button>
+                    </div>
+                    <div class="pesquisa">
+                        <div class="pesquisaInput">
+                            <button id="btnPesquisa" onclick="pessoa.pesquisa()">.</button>
+                            <input id="inputPesquisa" type="text" placeholder="Digite o ID">
+                        </div>
+
+                    </div>
+                </nav>
+
+                <!-- SESSÂO DA TABELA -->
+                <div class="areaTable">
+                    <table>
+                        <thead>
+                            <th>id</th>
+                            <th>nome</th>
+                            <th>email</th>
+                            <th>telefone</th>
+                            <th>ações</th>
+                        </thead>
+                        <tbody id="tbody">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+        </main>
+
+    </div>
+
+    <!-- RODAPÉ-->
+    <footer>
+        <h3>todos os direitos reservados. @dig-luigi</h3>
+    </footer>
+
+</body>
+
+</html>

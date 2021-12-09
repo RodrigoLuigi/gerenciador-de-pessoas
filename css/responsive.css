@@ -1,0 +1,26 @@
+@media screen and (max-width: 600px) {
+    .container {
+        display:grid;
+    }
+
+    aside{
+        width: 100%;
+    }
+
+    main{
+        width: 100%;
+    }
+
+    .content{
+        width: 100%;
+    }
+
+    .areaTable{
+        width: 95%;
+    }
+
+    .areaTable table{
+        width: 100%;
+    }
+    
+}
