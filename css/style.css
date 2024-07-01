@@ -5,6 +5,7 @@
 }
 
 body {
+    min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -13,17 +14,18 @@ header {
     text-align: center;
     font-weight: bolder;
     box-shadow: 0 0 4px 1px;
-
+    padding: 20px;
 }
 
 header h1 {
     color: #F2F5FA;
-    padding: 20px;
 }
 
 .container {
     display: flex;
     justify-content: left;
+    height: calc(100vh - 135px);
+
 }
 
 aside {
@@ -132,7 +134,7 @@ nav {
     background-position: center;
 
     margin: 0 10px 20px 10px;
-    height: 415px;
+    height: 500px;
     overflow-y: scroll;
 
     border-bottom: 1px solid rgb(185, 185, 185);
