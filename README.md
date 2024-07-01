@@ -35,7 +35,7 @@ Techs: **HTML**, **CSS** e **JavaScript**.
 :heavy_check_mark: Deletar pessoa\
 :heavy_check_mark: Editar pessoa\
 :heavy_check_mark: Listar pessoa\
-:heavy_check_mark: Listar pessoa pelo id\
+:heavy_check_mark: Listar pessoa pelo id
 
 ## :books: Bibliotecas
 
